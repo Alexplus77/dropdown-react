@@ -5,7 +5,7 @@ import('./main.css')
     const DropDown=({openDropDown, listDropDown, isOpen, isActive, activeList})=>{
 
     return (<div className="container">
-        <div data-id="wrapper" className={`dropdown-wrapper  ${ isOpen? 'open': null}`}>
+        <div data-id="wrapper" className={`dropdown-wrapper  ${ !isOpen? 'open': null}`}>
             <button data-id="toggle" className="btn" onClick={openDropDown}>
                 <span>Account Settings</span>
                 <i className="material-icons">public</i>
