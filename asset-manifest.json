@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dropdown-react/static/css/main.7e40a6c7.chunk.css",
-    "main.js": "/dropdown-react/static/js/main.63d4fa47.chunk.js",
-    "main.js.map": "/dropdown-react/static/js/main.63d4fa47.chunk.js.map",
+    "main.js": "/dropdown-react/static/js/main.b53b5a3c.chunk.js",
+    "main.js.map": "/dropdown-react/static/js/main.b53b5a3c.chunk.js.map",
     "runtime-main.js": "/dropdown-react/static/js/runtime-main.f63dc0ec.js",
     "runtime-main.js.map": "/dropdown-react/static/js/runtime-main.f63dc0ec.js.map",
     "static/js/2.3f3f4356.chunk.js": "/dropdown-react/static/js/2.3f3f4356.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.f63dc0ec.js",
     "static/js/2.3f3f4356.chunk.js",
     "static/css/main.7e40a6c7.chunk.css",
-    "static/js/main.63d4fa47.chunk.js"
+    "static/js/main.b53b5a3c.chunk.js"
   ]
 }
