@@ -2,7 +2,7 @@ import React from "react";
 import DropDownList from "./dropdownlist";
 import('./main.css')
 
-    const DropDown=({openDropDown, listDropDown, isOpen, isActive, activeList})=>{
+    const DropDown=({openDropDown, isOpen, dropdownList, activeList})=>{
 
     return (<div className="container">
         <div data-id="wrapper" className={`dropdown-wrapper  ${ !isOpen? 'open': null}`}>
@@ -10,7 +10,7 @@ import('./main.css')
                 <span>Account Settings</span>
                 <i className="material-icons">public</i>
             </button>
-            <DropDownList isActive={isActive} activeList={activeList} listDropDown={listDropDown}/>
+            <DropDownList dropdownList={dropdownList} activeList={activeList}/>
         </div>
     </div>)
     }

@@ -1,12 +1,16 @@
 import React from "react";
+
 import('./main.css')
 
-const DropDownList = ({listDropDown, activeList, isActive})=>{
-    return(
+const DropDownList = ({activeList, dropdownList}) => {
+
+    return (
         <ul data-id="dropdown" className="dropdown">
             {
-                listDropDown.map((elem, i)=>{
-                    return     <li key={elem} className={isActive? 'active': null} ><a href="/#"  onClick={(e)=>activeList(e)}>{elem}</a></li>
+                dropdownList.map(({title, active}, i) => {
+                    return <li key={i} className={active === 'true' ? 'active' : null}>
+                        <a href="/#" onClick={() => activeList(i)}>{title}</a>
+                        </li>
                 })
             }
         </ul>
