@@ -13,7 +13,8 @@ const [dropdownList, setActive]=useState([ {title:'Profile Information', active:
   const openDropDown=()=>{
 setOpen(!isOpen)
   }
-  const activeList =(id)=>{
+  const activeList =(id, e)=>{
+    e.preventDefault()
      const activeList= dropdownList.map((elem, i)=>{
          id===i ? elem.active='true' : elem.active = 'false'
          return elem

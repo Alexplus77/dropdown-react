@@ -9,7 +9,7 @@ const DropDownList = ({activeList, dropdownList}) => {
             {
                 dropdownList.map(({title, active}, i) => {
                     return <li key={i} className={active === 'true' ? 'active' : null}>
-                        <a href="/#" onClick={() => activeList(i)}>{title}</a>
+                        <a href="/#" onClick={(e) => activeList(i, e)}>{title}</a>
                         </li>
                 })
             }
