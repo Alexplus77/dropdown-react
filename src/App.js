@@ -4,7 +4,8 @@ import './main.css';
 
 function App() {
 const [isOpen, setOpen]=useState('false')
-const [dropdownList, setActive]=useState([ {title:'Profile Information', active: 'false'},
+const [dropdownList, setActive]=useState([
+    {title:'Profile Information', active: 'false'},
     {title:'Change Password', active: 'false'},
     {title:'Become PRO', active: 'false'},
     {title:'Help', active: 'false'},
