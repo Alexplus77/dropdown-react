@@ -1,30 +1,23 @@
 import React, {useState} from "react";
-import DropDown from "./dropdown";
+import DropDown from "./Components/dropdown";
 import './main.css';
 
 function App() {
+    const dropdownList=['Profile Information', 'Change Password', 'Become PRO', 'Help', 'Log Out']
 const [isOpen, setOpen]=useState('false')
-const [dropdownList, setActive]=useState([
-    {title:'Profile Information', active: 'false'},
-    {title:'Change Password', active: 'false'},
-    {title:'Become PRO', active: 'false'},
-    {title:'Help', active: 'false'},
-    {title:'Log Out', active: 'false'}])
+const [activeLi, setActive]=useState('')
 
   const openDropDown=()=>{
 setOpen(!isOpen)
   }
-  const activeList =(id, e)=>{
+  const activeList =(e, id)=>{
     e.preventDefault()
-     const activeList= dropdownList.map((elem, i)=>{
-         id===i ? elem.active='true' : elem.active = 'false'
-         return elem
-     })
-      setActive(activeList)
+     const activeItem= dropdownList.map((elem, i)=>id===i)
+    setActive(activeItem)
   }
 
   return (
-     <DropDown dropdownList={dropdownList} activeList={activeList} openDropDown={openDropDown}  isOpen={isOpen}/>
+     <DropDown dropdownList={dropdownList} activeItem={activeLi} activeList={activeList} openDropDown={openDropDown}  isOpen={isOpen}/>
 
   );
 }
