@@ -5,7 +5,7 @@ import './main.css';
 function App() {
     const dropdownList=['Profile Information', 'Change Password', 'Become PRO', 'Help', 'Log Out']
 const [isOpen, setOpen]=useState('false')
-const [activeLi, setActive]=useState('')
+const [activeLi, setActive]=useState(false)
 
   const openDropDown=()=>{
 setOpen(!isOpen)
