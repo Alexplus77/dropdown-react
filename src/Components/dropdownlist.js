@@ -8,7 +8,7 @@ const DropDownList = ({activeList, activeItem, dropdownList}) => {
         <ul data-id="dropdown" className="dropdown">
             {
                 dropdownList.map((elem, i) => {
-                    return <li key={i} onClick={( e) => activeList(e, i)}  className={activeItem[i] ? 'active' : null} >
+                    return <li key={i} data-name={elem} onClick={( e) => activeList(e, i)}  className={activeItem===elem ? 'active' : null} >
                         <a href="/#" >{elem}</a>
                         </li>
                 })

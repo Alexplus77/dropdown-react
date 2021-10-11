@@ -10,10 +10,9 @@ const [activeLi, setActive]=useState(false)
   const openDropDown=()=>{
 setOpen(!isOpen)
   }
-  const activeList =(e, id)=>{
+  const activeList =(e)=>{
     e.preventDefault()
-     const activeItem= dropdownList.map((elem, i)=>id===i)
-    setActive(activeItem)
+    setActive( e.currentTarget.dataset.name)
   }
 
   return (
