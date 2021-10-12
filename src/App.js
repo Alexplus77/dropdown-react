@@ -15,10 +15,7 @@ function App() {
 
   const openDropDown = () => setOpen(!isOpen);
 
-  const activeList = (e) => {
-    e.preventDefault();
-    setActive(e.currentTarget.dataset.name);
-  };
+  const activeList = (e) => setActive(e.currentTarget.dataset.name);
 
   return (
     <DropDown
